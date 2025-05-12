@@ -20,7 +20,7 @@ export async function generateFeedback(input: GenerateFeedbackInput): Promise<Ge
   const { currentQuestion, userInput, modelAnswer } = input;
 
   // Client-safe placeholder logic
-  const feedback = `Thanks for your answer! Based on the model answer, you might also consider: ${modelAnswer.slice(0, 100)}... 😊`;
+  const feedback = `Thanks for your answer! Based on the model answer, you might also consider: ${modelAnswer} 😊`;
 
   return {
     feedback,
