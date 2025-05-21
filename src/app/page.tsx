@@ -62,7 +62,7 @@ const CompletionScreen = ({onRetry}: {onRetry: () => void}) => {
   }, []);
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 text-white" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 text-white" style={{ fontFamily: 'Satoshi, sans-serif' }}>
       <Confetti
         width={windowSize.width}
         height={windowSize.height}
@@ -147,7 +147,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2 text-white" style={{ backgroundColor: '#0e182e', fontFamily: 'Montserrat, sans-serif' }}>
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 text-white" style={{ backgroundColor: '#0e182e', fontFamily: 'Satoshi, sans-serif' }}>
       <Card className="w-full max-w-4xl p-4" style={{ backgroundColor: '#0e182e', color: 'white', border: 'none' }}>
         <CardHeader>
           <CardTitle className="text-lg font-semibold">
