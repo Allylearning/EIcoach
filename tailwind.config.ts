@@ -61,6 +61,9 @@ export default {
   				ring: 'hsl(var(--sidebar-ring))'
   			}
   		},
+  		fontSize: {
+  			sm: ['1rem', '1.5rem'],
+  		},
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
