@@ -1,6 +1,6 @@
 import type {Metadata} from 'next';
 import {Geist, Geist_Mono} from 'next/font/google';
-import '../src/fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css';
+import '../fonts/Satoshi_Complete/Fonts/WEB/css/satoshi.css';
 import './globals.css';
 
 const geistSans = Geist({
