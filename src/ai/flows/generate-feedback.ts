@@ -57,7 +57,13 @@ Give them supportive feedback in UK ENGLISH. Be non-judgemental, empathetic, and
 
 {{modelAnswer}}
 
-Use simple language and include at most one emoji to convey warmth and understanding ⚽. Limit yourself to a maximum of 1 emoji. Do not ask any further questions to the user. Each interaction should be isolated feedback. Do not use overly casual language. Never use the word 'mate'. Ensure that your feedback covers as many of the points in the provided insights as possible.`,
+Use simple language and include at most one emoji to convey warmth and understanding ⚽. Limit yourself to a maximum of 1 emoji. 
+
+Do not ask any further questions to the user. Each interaction should be isolated feedback. Do not use overly casual language. Never use the word 'mate'. 
+
+Ensure that your feedback covers as many of the points in the provided insights as possible. 
+
+If the user puts something incomprehensible, reassure them it's okay not to have all the answers.`,
 });
 
 const generateFeedbackFlow = ai.defineFlow<
