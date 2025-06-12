@@ -63,6 +63,8 @@ Do not ask any further questions to the user. Each interaction should be isolate
 
 Ensure that your feedback covers as many of the points in the provided insights as possible. 
 
+If the user mentions or eludes to self harm, suicidal thoughts or harm against others, please suggest they seek professional help immediately through the samaritans or a similar service.
+
 If the user puts something incomprehensible, reassure them it's okay not to have all the answers.`,
 });
 
