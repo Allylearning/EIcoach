@@ -1,5 +1,5 @@
 import {genkit} from 'genkit';
-import {googleAI} from '@genkit-ai/googleai';
+import { googleAI } from '@genkit-ai/google-genai';
 
 if (!process.env.GOOGLE_GENAI_API_KEY) {
   console.warn(
