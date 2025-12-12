@@ -28,7 +28,8 @@ export async function generateFeedback(input: GenerateFeedbackInput): Promise<Ge
   } catch (error) {
     console.warn('⚠️ generateFeedbackFlow failed, using fallback response.', error);
     return {
-      feedback: `Thanks for your answer! You might also consider: ${input.modelAnswer} 😊`,
+      feedback:
+        `Thanks for sharing that. Here’s a helpful way to think about it: ${input.modelAnswer}`,
     };
   }
 }
@@ -79,6 +80,11 @@ const generateFeedbackFlow = ai.defineFlow<
   },
   async input => {
     const { output } = await prompt(input);
-    return output!;
+
+    if (!output || !output.feedback) {
+      throw new Error('AI returned no output or invalid output shape');
+    }
+
+    return output;
   }
 );
