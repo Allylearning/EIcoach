@@ -1,18 +1,16 @@
-import {genkit} from 'genkit';
+import { genkit } from 'genkit';
 import { googleAI } from '@genkit-ai/google-genai';
 
-if (!process.env.GOOGLE_GENAI_API_KEY) {
-  console.warn(
-    '⚠️ GOOGLE_GENAI_API_KEY is not set. AI calls will fail at runtime.'
-  );
-}
+console.log(
+  '[AI] GOOGLE_GENAI_API_KEY present:',
+  Boolean(process.env.GOOGLE_GENAI_API_KEY)
+);
 
 export const ai = genkit({
-  promptDir: './prompts',
   plugins: [
     googleAI({
       apiKey: process.env.GOOGLE_GENAI_API_KEY,
     }),
   ],
-  model: 'googleai/gemini-2.5-flash',
+  model: googleAI.model('gemini-2.5-flash'),
 });
